@@ -1,42 +1,32 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## 00-Deployment
 
-### Author: Student/Group Name
+### Author: Brent Woodward
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [![Build Status](https://travis-ci.com/BrentTech/00-deployment.svg?branch=master)](https://travis-ci.com/BrentTech/00-deployment)
+* [repo](https://github.com/BrentTech/00-deployment)
+* [travis](https://travis-ci.com/BrentTech/00-deployment)
+* [heroku](https://woodward-00-deployment.herokuapp.com/)
 
 ### Modules
-#### `modulename.js`
+#### `pol.js`
 ##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+* `isAlive()`
+* Returns true or false
+  *false if a parameter is sent
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - defined in the environment
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/`
+  * Returns `true`
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
+* npm test (runs unit tests)
+* npm run lint (runs linter tests)
